@@ -7,7 +7,10 @@ const config = {
 
   kit: {
     adapter: adapter({
-      //fallback: '200.html', // may differ from host to host
+      // Cf Pages SPA
+      // https://developers.cloudflare.com/pages/configuration/serving-pages/#single-page-application-spa-rendering
+      // Cf Pages _redirects
+      // https://community.cloudflare.com/t/cloudflare-pages-proxy-redirect-not-working/482601
       fallback: "index.html",
     }),
   },
