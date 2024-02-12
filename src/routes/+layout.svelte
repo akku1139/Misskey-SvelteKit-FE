@@ -15,6 +15,6 @@ import Sidebar from "./sidebar.svelte";
 <div id="container">
   <div id="top" style="grid-area: top;">top</div>
   <div id="sidebar" style="grid-area: side;"><Sidebar /></div>
-  <div id="contents" style="grid-area: main;">main</div>
+  <div id="contents" style="grid-area: main;"><slot></slot></div>
   <div id="panel" style="grid-area: panel;">panel</div>
 </div>
